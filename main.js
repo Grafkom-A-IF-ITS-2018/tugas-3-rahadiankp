@@ -48,8 +48,8 @@ function getShader(id) {
 function WebGL(id){
     id = id || WEBGL_ID_DEFAULT;
     var canvasGL = document.getElementById(id);
-    canvasGL.width = window.innerWidth; //document.width is obsolete
-    canvasGL.height = window.innerHeight; //document.height is obsolete
+    canvasGL.width = 800;
+    canvasGL.height = 600;
     GL = canvasGL.getContext(EXPERIMENTAL_WEBGL);
     GL.VIEWPORT_WIDTH = canvasGL.width;
     GL.VIEWPORT_HEIGHT = canvasGL.height;
